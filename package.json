@@ -1,0 +1,42 @@
+{
+  "name": "@sinaper/components-web",
+  "version": "1.0.0",
+  "author": "Danilo Mendes <danilomendes.e@gmail.com>",
+  "homepage": "https://bitbucket.org/mendes-e/sinaper-app#readme",
+  "license": "ISC",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc && tsc-alias",
+    "dev": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.2",
+    "@sinaper/icons": "^1.0.6",
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.8.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.20.1",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "concurrently": "^7.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tsc-alias": "^1.7.1",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mendes-e@bitbucket.org/mendes-e/sinaper-app.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/mendes-e/sinaper-app/issues"
+  }
+}
