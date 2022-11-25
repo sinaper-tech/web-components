@@ -1,10 +1,10 @@
 {
-  "name": "@sinaper/components-web",
+  "name": "@sinaper/web-components",
   "version": "1.0.0",
   "author": "Danilo Mendes <danilomendes.e@gmail.com>",
-  "homepage": "https://bitbucket.org/mendes-e/sinaper-app#readme",
-  "license": "ISC",
-  "private": true,
+  "homepage": "https://github.com/sinaper-tech/web-components#readme",
+  "license": "MIT",
+  "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,9 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mendes-e@bitbucket.org/mendes-e/sinaper-app.git"
+    "url": "https://github.com/sinaper-tech/web-components.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/mendes-e/sinaper-app/issues"
+    "url": "https://github.com/sinaper-tech/web-components/issues"
   }
 }
