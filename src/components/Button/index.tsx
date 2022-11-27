@@ -20,10 +20,11 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, r
     children,
     variant = 'primary',
     className,
+    isLoading = false,
     ...rest
   } = props
 
-  const disabled = rest.isLoading ?? rest.disabled
+  const disabled = isLoading ?? rest.disabled
 
   return (
     <button
@@ -61,7 +62,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, r
       )}
       {...rest}
     >
-      {rest.isLoading && (
+      {isLoading && (
         <Box className="text-light-900 dark:text-dark-900">
           <LoaderButtonIcon className="h-7 animate-spin" />
         </Box>
